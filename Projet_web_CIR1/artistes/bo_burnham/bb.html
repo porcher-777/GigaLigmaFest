@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link href="C:\Users\Jeann\Documents\site\artistes\style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="C:\Users\Jeann\Documents\site\artistes\style.js"></script>
+  <script src="https://kit.fontawesome.com/55a75747d2.js" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+   <title> Bo_Burnham </title>
+ </head>
+
+
+
+ <body>
+
+  <nav class="nav">
+    <div class="festival-logo"><img src="My_project.png" height="160px" width="160px" position = "fixed" left="10px" top="10px"></div>
+    <ul>
+        <li class="nav-items"><a href ="../../accueil/index.html">ACCUEIL</a</li>
+        <li class="nav-items"><a href="../../programmation/programmation.html">PROGRAMMATION</a></li>
+        <li class="nav-items"><a href="../../Billetterie/Billetterie.html">BILLETTERIE</a></li>
+
+    </ul>
+    <i class="fa-solid fa-bars fa-2x" id="icon" onclick="menuApparition();"></i>
+</nav>
+<div id="menu">
+    <ul class="menu-mobile" style="list-style-type:none;">
+        <li class="nav-items-mobile"><a href ="../../accueil/index.html">ACCUEIL</a</li>
+        <li class="nav-items-mobile"><a href="../../programmation/programmation.html">PROGRAMMATION</a></li>
+        <li class="nav-items-mobile"><a href="../../Billetterie/Billetterie.html">BILLETTERIE</a></li>
+
+    </ul>
+    <i class="fa-solid fa-bars fa-2x" id="icon" onclick="menuApparition();"></i>
+</div>  
+
+  <div class="main">
+
+    <img class="image" id="1" src="img.jpg"  onmouseover=mapage() onmouseout=mapageout()>
+   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k1BneeJTDcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+    
+    <div id="chanson_billet">
+
+      <div id="chansons">
+
+          <h2 class="h2_1"> Chansons :</h2>
+          <p class="titre_joue">welcome to the internet<br>all eyes on me <br>mansion party<br>bezos <br>words words words</p>
+
+      </div>
+
+      <div id="billet">
+
+          <h2 class="h2_2">Acheter votre ticket :</h2>
+           <button type="button" ><a href = "../../Billetterie/Billetterie.html">Billeterie</a></button>
+
+      </div>
+    </div>
+  </div>
+ 
+  
+  <div id="background">
+    <p> Comedy band Ninja Sex Party has but one goal: To take your body sweetly 
+        Burnham se fait connaître en publiant sur YouTube, à partir de mars 2006, des vidéos dont le succès d'audience - sa première chanson sur Youtube My whole family... a atteint les 10 millions de vues et sa chaine YouTube totalise 2,89 millions d'abonnés - lui assure une notoriété conséquente.Il signe un contrat de cinq ans avec Comedy Central Records et publie son premier EP, Bo Fo Sho, en 2008. Son second album sort en 2010. Ses premières chansons sont humoristiques et légères mais il aborde également des questions sérieuses avec humour comme la place et le rôle de l'artiste et de l'industrie musicale1. La même année, il produit son premier spectacle, Words Words Words, diffusé en live sur Comedy Central. Son troisième album et son second spectacle, what, sortent en 2013, relayés sur sa chaîne Youtube et sur Netflix aux États-Unis. Il sort la même année son recueil de poèmes Egghead or You can't survive on ideas alone2 illustré par Chance Bone et la série qu'il a co-créée et dans laquelle il tient le rôle principal diffusée sur MTV Zach Stone Is Gonna Be Famous (en). Son troisième spectacle, Make Happy est sorti en 2015 sur Netflix3. Le spectacle mélange des chansons humoristiques et sarcastiques, du stand-up et plusieurs parties plus sérieuses où il évoque ses angoisses et anxiétés sociales, des questions relatives à la société de l'image et de la performance et où il tourne en dérision avec sarcasme certaines tendances de l'industrie télévisuelle et musicale.
+
+En 2018, Burnham réalise le film Eighth Grade, dont il est aussi le scénariste et où il aborde la question de l'anxiété sociale et les difficultés à être adolescent via le personnage principal de Kayla, 13 ans, durant ses dernières semaines de collège avant son entrée au lycée4,5. Le film a été unanimement acclamé et a reçu plusieurs récompenses de la Writers Guild of America pour le meilleur scénario originale et de la Directors Guild of America pour la meilleure réalisation pour un premier film6,7.
+
+En 2021, il sort Inside, sur la plateforme Netflix, qui reçoit de bonnes critiques sur les réseaux sociaux, de Sam Riegel, Jack Howard, Jim Beaver ou encore Donald Orr8.
+
+
+
+
+</p>
+  </div>
+  
+  <footer>
+    <form>
+        <div id="formulaire">
+            <div id="contact">
+                <p>
+                  Restons en contact ! <br/>
+                  Abonnez-vous à la newsletter : <br/><br/>
+                </p>
+                
+                <input type="text" id="email">
+                <input type="button" value="OK" style="cursor:pointer;" onclick="verifMail();">
+            </div>
+        
+            <div id="logos">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </div>
+        </div>
+    </form>
+</footer>
+
+
+</body>
+</html>

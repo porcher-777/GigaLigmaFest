@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Acceuil Giga Ligma Festival
+        </title>
+        <meta http-equiv="content-type" content = "text/html" charset="utf-8"/>
+        <meta http-equiv="Content-Style-Type" conntent = "text/css"/>
+        <link href="Accueil.css" rel="stylesheet" type ="text/css"/>  
+        <script type = "text/javascript" src="accueil.js"></script> 
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyDT_fH0r3zsew9yO9FvjP8clTr2ux-ZMls"></script> <!--Accès à la carte map -> key : clé API JS Google Maps - callback : nom de la fonction -->  
+        <script src="https://kit.fontawesome.com/55a75747d2.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body onload="countdown(); Carte();">
+
+        <div id="section1">
+            
+                <nav class="nav">
+                    <div class="festival-logo"><img src="Logo.png" height="160px" width="160px" position = "fixed" left="10px" top="10px"></div>
+                    <ul>
+                        <li class="nav-items"><a href ="#Accueil">ACCUEIL</a</li>
+                        <li class="nav-items"><a href="../programmation/programmation.html">PROGRAMMATION</a></li>
+                        <li class="nav-items"><a href="../Billetterie/Billetterie.html">BILLETTERIE</a></li>
+                        <li class="nav-items"><a href="#section2">EN SAVOIR PLUS</a></li>
+                        <li class="nav-items"><a href="#section4">NOS PARTENAIRES</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars fa-2x" id="icon" onclick="menuApparition();"></i>
+                </nav>
+                <div id="menu">
+                    <ul class="menu-mobile" style="list-style-type:none;">
+                        <li class="nav-items-mobile"><a href ="#Accueil">ACCUEIL</a</li>
+                        <li class="nav-items-mobile"><a href="../programmation/programmation.html">PROGRAMMATION</a></li>
+                        <li class="nav-items-mobile"><a href="../Billetterie/Billetterie.html">BILLETTERIE</a></li>
+                        <li class="nav-items-mobile"><a href="#section2">EN SAVOIR PLUS</a></li>
+                        <li class="nav-items-mobile"><a href="#section4">NOS PARTENAIRES</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars fa-2x" id="icon" onclick="menuApparition();"></i>
+                </div>
+        
+            <div>
+                <img src="LogoNom.png" id="logoTexte"><br/>
+                <!--<h1>Giga Ligma Festival</h1>-->
+            </div>
+            <!--<h1><pre>GIGA LIGMA FESTIVAL</pre></h1>-->
+    
+            <div id="countdown">
+                <div id = "timer"></div>
+                <div class="cadran">
+                    <div id="jour"></div>
+                    <div class="quand">Jours</div>
+                </div>    
+                <div class="cadran">
+                    <div id="heure"></div>
+                    <div class="quand">Heures</div>
+                </div>
+                <div class="cadran">
+                    <div id="min"></div>
+                    <div class="quand">Minutes</div>
+                </div>
+                <div class="cadran">
+                    <div id="sec"></div>
+                    <div class="quand">Secondes</div>
+                </div>
+            </div>
+            
+            <button type="button"><a href = "#second-section">Billeterie</a></button>
+            <button type="button"><a href = "#second-section">Programmation</a></button>
+        </div>
+
+        <div id="s23">
+        <div id="section2">
+            <br/><br/>
+                <div id ="boite">
+                    <h1>Rejoignez l'expérience !</h1>
+                    <p>Idéalement situés en plein centre de la capitale, sur la place du Grand Théâtre de l'Est de Pyong Yang, nous sommes prêts à vous acceuillir pour une expérience inédite.
+                    Depuis maintenant 10 ans, le Giga Ligma Festival attire des artistes et un public de tous les horizons. Pop, funk, electro, rock et bien d'autres styles de musique seront au rendez-vous 
+                    pour l'anniversaire du festival. 
+                    En effet, nous nous somme dépassés pour vous offrir, cette année seulemnt, 10 artistes / groupes de musiques parmi les plus écoutés sur toutes les plateformes de streaming,
+                    plusieurs fois récompensés pour leur musique qualitative.
+                    </p>
+                </div>   
+        </div>
+        <h1 style="color: white;">Nos sponsors</h1>
+        <div id="section3"> <!--Sponsors-->
+            <img src="logoKFC.png">
+            <img src="logoBK.png">
+            <img src="logoDominos.png">
+            <img src="logoMacdo.png">
+            <img src="logoPringles.png">
+        </div>
+        </div>
+
+        <div id="section4">
+            <div id="carte">
+                <!--Où se déroule le festival-->
+            </div>
+        </div>
+        
+        <footer>
+            <form>
+                <div id="formulaire">
+                    <div id="contact">
+                        <p>
+                            Restons en contact ! <br/><br/>
+                            Abonnez-vous à la newsletter : <br/>
+                        </p>
+                        
+                        <input type="text" id="email">
+                        <input type="button" value="OK" onclick="verifMail();">
+                    </div>
+                
+                    <div id="logos">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                    </div>
+                </div>
+            </form>
+        </footer>
+    </body>
+</html>

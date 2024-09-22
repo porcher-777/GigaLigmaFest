@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Billeterie
+        </title>
+        <meta http-equiv="content-type" content = "text/html" charset="utf-8"/>
+        <meta http-equiv="Content-Style-Type" conntent = "text/css"/>
+        <link href="Billetterie.css" rel="stylesheet" type ="text/css"/>  
+        <script type="text/javascript" src="billetterie.js" ></script>
+        <script src="https://kit.fontawesome.com/55a75747d2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="section1">
+            
+            <nav class="nav">
+                <div class="festival-logo"><img src="Logo.png" height="160px" width="160px" position = "fixed" left="10px" top="10px"></div>
+                <ul>
+                    <li class="nav-items"><a href ="../accueil/index.html">ACCUEIL</a></li>
+                    <li class="nav-items"><a href="../programmation/programmation.html">PROGRAMMATION</a></li>
+                    <li class="nav-items"><a href="#billet" onclick="A1();">ACCES 1</a></li>
+                    <li class="nav-items"><a href="#billet" onclick="A2();">ACCES 2</a></li>
+                    <li class="nav-items"><a href="#billet" onclick="A3();">ACCES 3</a></li>
+                </ul>
+                <i class="fa-solid fa-bars fa-2x" id="icon" onclick="menuApparition();"></i>
+            </nav>
+            <div id="menu">
+                <ul class="menu-mobile" style="list-style-type:none;">
+                    <li class="nav-items-mobile"><a href ="../../accueil/index.html">ACCUEIL</a</li>
+                    <li class="nav-items-mobile"><a href="../../programmation/programmation.html">PROGRAMMATION</a></li>
+                    <li class="nav-items-mobile"><a href="#billet" onclick="A1();">ACCES 1</a></li>
+                    <li class="nav-items-mobile"><a href="#billet" onclick="A2();">ACCES 2</a></li>
+                    <li class="nav-items-mobile"><a href="#billet" onclick="A3();">ACCES 3</a></li>
+                </ul>
+                <i class="fa-solid fa-bars fa-2x" id="icon" onclick="menuApparition();"></i>
+            </div>
+
+            <div id="contenant">
+            <div>
+                <h1>Accès 1 - 20$</h1>
+                <p>Cette formule donne accès à la scène 1 sur laquelle se produiront : </p>
+                    <ul>
+                        <li>Andie</li>
+                        <li>Bo Burnham</li>
+                        <li>Copains du web</li>
+                    </ul>
+                    <button class="bouton" onclick="A1();"><a href="#billet">J'y vais !</a></button>
+            </div>
+
+            <div>
+                <h1>Accès 2 - 35$</h1>
+                <p>Cette formule donne accès à la scène 1 et 2 sur lesquelles se produiront : </p>
+                    <ul>
+                        <li>Andie</li>
+                        <li>Bo Burnham</li>
+                        <li>Copains du web</li>
+                        <li>Drake023</li>
+                        <li>Jeff Lau</li>
+                        <li>Kero Kero Bonito</li>
+                    </ul>
+                    <button class="bouton" onclick="A2();"><a href="#billet">J'y vais !</a></button>
+            </div>
+
+            <div>
+                <h1>Accès 3 - 50$</h1>
+                <p>Cette formule donne accès à l'intégralité du festival à savoir la scène 1, 2 et 3 sur lesquelles se produiront : </p>
+                    <ul>
+                        <li>Andie</li>
+                        <li>Bo Burnham</li>
+                        <li>Copains du web</li>
+                        <li>Drake023</li>
+                        <li>Jeff Lau</li>
+                        <li>Kero Kero Bonito</li>
+                        <li>Squeezie</li>
+                        <li>NSP</li>
+                        <li>Palmashow</li>
+                        <li>RDR</li>
+                    </ul>
+                    <button class="bouton" onclick="A3();"><a href="#billet">J'y vais !</a> </button>
+            </div>
+            </div>
+
+        </div>
+
+        <div id="billet">
+            <form id="boite">
+
+                <div id="identite">
+                    <h1>Identité :</h1>
+                    <select name="choix" id="choix" required>
+                        <option value="acc0">--Choississez la formule souhaitée--</option>
+                        <option value="acc1">Accès 1 - 20$</option>
+                        <option value="acc2">Accès 2 - 35$</option>
+                        <option value="acc3">Accès 3 - 50$</option>
+                    </select> <br/><br/>
+                    <label for="lname">Nom</label> <input type="text" id="name" name="lname" maxlength = "25" required></input><br/><br/>
+                    <label for="fname">Prénom</label> <input type="text" id="name" name="fname" maxlength = "25" required></input><br/><br/>
+                    <label for = "fnumber">Numéro de téléphone portable</label> <input type = "tel" id = "number" name = "fnumber" maxlength = "14" required><br/><br/>
+                    <label for = "email">Adresse de courrier électronique</label> <input type = "email" id = "remail" name = "email" required><br/><br/>
+                </div>
+                <div id="bancaire">
+                    <h1>Informations bancaires :</h1>
+                    <input type="text" placeholder="Code de carte bleue" maxlength = "19" id="cb" size="30px" required><br/><br/>
+                    <input type="text" placeholder="MM" size="7px" maxlength = "2" pattern="[0-9]{2}" required>
+                    <input type="text" placeholder="YY" size="7px" maxlength = "2" pattern="[0-9]{2}" required><br/><br/>
+                    <input type="text" placeholder="CVC" size="7px" maxlength = "3" pattern="[0-9]{3}" required><br/><br/>
+                    <input type="submit" value="Valider" style="cursor:pointer;" onclick="verifForm();">
+                </div>
+
+            </form>
+        </div>
+
+            <footer>
+                <form>
+                    <div id="formulaire">
+                        <div id="contact">
+                            <p>
+                                Restons en contact ! <br/><br/>
+                                Abonnez-vous à la newsletter : <br/>
+                            </p>
+                            
+                            <input type="text" id="email">
+                            <input type="button" value="OK" style="cursor:pointer;" onclick="verifMail();">
+                        </div>
+                    
+                        <div id="logos">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                            <i class="fa-brands fa-twitter fa-2x"></i>
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                            <i class="fa-brands fa-youtube fa-2x"></i>
+                        </div>
+                    </div>
+                </form>
+            </footer>
+
+    </body>
+</html>
